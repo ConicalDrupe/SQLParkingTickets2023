@@ -10,7 +10,7 @@
 ![alt text](https://github.com/ConicalDrupe/SQLParkingTickets2023/blob/main/Tickets_ERD.png "ERD image")
 
 ## Dashboard & Results
-![alt text]()
+![alt text](https://github.com/ConicalDrupe/SQLParkingTickets2023/blob/main/dashboard_screenshot.PNG "Dashboard")
 
 **How should we strategize to avoid a ticket?**
 - Park in the afternoon, but leave before 6pm (afternoon)
