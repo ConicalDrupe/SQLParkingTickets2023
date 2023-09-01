@@ -9,7 +9,8 @@
 ## ERD - four tables are included (Tickets,Locations,Violations, and Vehicle)
 ![alt text](https://github.com/ConicalDrupe/SQLParkingTickets2023/blob/main/Tickets_ERD.png "ERD image")
 
-## Dashboard & Results
+## [Dashboard & Results](https://public.tableau.com/app/profile/christopher.boon2264/viz/ParkingTickets2022-2023/ParkingTicketsDashboard)
+[Click Here to see dashboard](https://public.tableau.com/app/profile/christopher.boon2264/viz/ParkingTickets2022-2023/ParkingTicketsDashboard)
 ![alt text](https://github.com/ConicalDrupe/SQLParkingTickets2023/blob/main/dashboard_screenshot.PNG "Dashboard")
 
 **How should we strategize to avoid a ticket?**
