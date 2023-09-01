@@ -17,3 +17,20 @@
 - Park in the afternoon, but leave before 6pm (afternoon)
 - Visit and park on a Monday or Saturday
 - Take a vacation during the summer months (namely July)
+
+## Cleaning Strategy
+1) Remove Duplicate and Null Rows
+2) Use window function to create unique vehicle MakeID, to reduce redundancy
+3) Clean Ticket Locations by splitting into address, street, and lot #
+4) Replaced redundant false-null lot # for addresses that had both null and non-null values
+5) Classify time of ticketing to time of day: Morning, Afternoon, Night, and Late Night
+6) Condense Parking Violation Types (From 41 similar types, down to 7 distinct)
+
+### 5) Create Time Of Day Categories
+Morning: 6am-noon
+Afternoon: noon-6pm
+Evening: 6pm-midnight
+Late Night: midnight-6am
+
+### 6) Condense Parking Violations to 7 types
+Originally there were 41 classifications of violations. But many types were self-similar. For example, ‘off street’ and ‘on street’ are of the same overtime parking violation.
