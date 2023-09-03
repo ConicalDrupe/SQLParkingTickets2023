@@ -26,6 +26,9 @@
 5) Classify time of ticketing to time of day: Morning, Afternoon, Night, and Late Night
 6) Condense Parking Violation Types (From 41 similar types, down to 7 distinct)
 
+### 2) Window funcion to create MakeID for Vehicle Table
+![Window funcion](https://gist.github.com/ConicalDrupe/b3a4762812a4e844f8648a51eaf9a3fa)
+
 ### 5) Create Time Of Day Categories
 Morning: 6am-noon
 Afternoon: noon-6pm
