@@ -13,12 +13,16 @@
 [Click Here to see dashboard](https://public.tableau.com/app/profile/christopher.boon2264/viz/ParkingTickets2022-2023/ParkingTicketsDashboard)
 ![alt text](https://github.com/ConicalDrupe/SQLParkingTickets2023/blob/main/dashboard_screenshot.PNG "Dashboard")
 
-**How should we strategize to avoid a ticket?**
-- Park in the afternoon, but leave before 6pm (afternoon)
-- Visit and park on a Monday or Saturday
-- Take a vacation during the summer months (namely July)
+## **How should we strategize to avoid a ticket?**
+1) **80% of tickets are expired parking**. Be punctual, or pay for extra time.
 
-## Cleaning Strategy
+2) If you are neither punctual or have deep pockets, **park away from areas with lots of activity**. Locations near malls and food hotspots such as Woodmont Ave. ,Cameron St., and Bethesda make up more than 20% of ticketing locations
+
+3) **Take advantage of "weekend slumps"**. Visit and park on Monday or Saturdays when workers are less active
+
+4) **Morning is the most risky time to park**, and should be avoided. There is a skew in the data collection. No tickets occurred from 6pm-12am. This could show a gap in DOT staffing.
+
+## Cleaning Strategy - See create_clean_tables.sql for code
 1) Remove Duplicate and Null Rows
 2) Use window function to create unique vehicle MakeID, to reduce redundancy
 3) Clean Ticket Locations by splitting into address, street, and lot #
@@ -26,14 +30,3 @@
 5) Classify time of ticketing to time of day: Morning, Afternoon, Night, and Late Night
 6) Condense Parking Violation Types (From 41 similar types, down to 7 distinct)
 
-### 2) Window funcion to create MakeID for Vehicle Table
-<script src="https://gist.github.com/ConicalDrupe/b3a4762812a4e844f8648a51eaf9a3fa.js"></script>
-
-### 5) Create Time Of Day Categories
-Morning: 6am-noon
-Afternoon: noon-6pm
-Evening: 6pm-midnight
-Late Night: midnight-6am
-
-### 6) Condense Parking Violations to 7 types
-Originally there were 41 classifications of violations. But many types were self-similar. For example, ‘off street’ and ‘on street’ are of the same overtime parking violation.
